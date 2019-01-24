@@ -1,6 +1,6 @@
-########################################################################
-
-########################################################################
+###########################################################################################################################
+###                                 :: Online Patient conversation classification ::
+###########################################################################################################################
 
 ### Loading Libraries
   library(tm)
@@ -46,17 +46,17 @@
       new_trans_conv_text.dtm <- removeSparseTerms(trans_conv_text.dtm,sparse = 0.95)
       dim(new_trans_conv_text.dtm)
       
-    # calculate the most frequent and least frequently occurring set of features
-    #find frequent terms
-      colS <- colSums(as.matrix(new_trans_conv_text.dtm))
-      length(colS)
-      doc_features <- data.table(name = attributes(colS)$names, count = colS)
+    # Calculate the most frequent and least frequently occurring set of features
+      #Find frequent terms
+        colS <- colSums(as.matrix(new_trans_conv_text.dtm))
+        length(colS)
+        doc_features <- data.table(name = attributes(colS)$names, count = colS)
       
-    #most frequent and least frequent words
+    # Most frequent and least frequent words
       doc_features[order(-count)][1:10] #top 10 most frequent words
       doc_features[order(count)][1:10] #least 10 frequent words
       
-    #create wordcloud
+    # Create wordcloud
       wordcloud(names(colS), colS, min.freq = 100, scale = c(6,.1), 
                 colors = brewer.pal(6, 'Dark2'))
       
