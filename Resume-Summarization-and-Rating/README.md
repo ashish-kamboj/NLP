@@ -9,8 +9,7 @@ For each of the job roles we get 100’s of resumes, going through each resume a
 |                                                                          | Requirements
 |--------------------------------------------------------------------------|:-----------------------------------------------------------------------------
 |**Phase 1:** Regex based parser and resume rating based on few set of columns |Should have all the functions defined to extract out the candidate details
-|--------------------------------------------------------------------------|-----------------------------------------------------------------------------
-|                                                                          |Explicitly define the skills based on which we have to rate the resume
+|                                                                              |Explicitly define the skills based on which we have to rate the resume
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------
 |Phase 2: Mix of Regex and ML Model based approach for Name Entity Recognition. Also, Rule based approach for resume rating based on the provided inputs                                                                          |Must have the training data (scrapping out the different resumes or trying out the public dataset available)
 |                                                                          |-----------------------------------------------------------------------------
