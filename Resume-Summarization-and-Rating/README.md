@@ -20,3 +20,5 @@ For each of the job roles we get 100’s of resumes, going through each resume a
 |                                                                          |Enhanced front-end for including further inputs like uploading job description doc
 
 
+## Trained Model
+I have built the **Name Entity Recognition** Model using **spaCy**.
