@@ -22,19 +22,23 @@ Objective is to build a model to predict the probability of match from mentor an
  - Lemmatization
 
 ## Feature Engineering
- - Topic Modeling using Latent Dirichlet Allocation (LDA)
+ - Topic Modeling (for feature generation) using Latent Dirichlet Allocation (LDA)
  - Bi-gram extraction
  - Tri-gram extraction
  - Text Length metrics
    - Word count
    - Character count
    - Average word length
- - asas
+ - Calculated document similarity (Cosine similarity) using Tfidf vectorization
 
-## Model Building
- - 
+## Model Building (Using PyCaret)
+ - Tried out the different classification models and choose the best performing after comparing the metrics (like Accuracy, ROC, F1-score etc.)
+ - Tuned the best performing model (Hyperparameter tuning)
+ - Model Evaluation
+ - Model Interpretation
+ - Calculated Feature importance
 
-## Model Deployment Using PyWebIO
+## Model Deployment (Using PyWebIO)
 ![PyWebIO Application](https://github.com/ashish-kamboj/NLP/blob/master/mentor-mentee-match-prediction/images/pywebio_application.gif)
 
 ## Creating a REST API using FastAPI
