@@ -19,4 +19,5 @@
 **3. Model Building**
   - Navie Bayes
   - SVM
-  - Deep Neural Networks
+  - Topic Modeling
+  - Name-Entity Recognition
